@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dog Breed Identification</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <h2>DOG BREED</h2>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="/predict">Predict</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- HERO SECTION (UNCHANGED) -->
+<section class="hero">
+    <h1>Dog Breed Identification</h1>
+    <p>Identification of Different Dog Breeds Using Deep Learning</p>
+    <a href="/predict" class="btn">Get Started</a>
+</section>
+
+<!-- ABOUT SECTION -->
+<section class="about-section" id="about">
+
+    <div class="about-container">
+
+        <!-- LEFT SIDE IMAGE -->
+        <div class="about-image">
+            <img src="{{ url_for('static', filename='images/dog_breeds.png') }}" alt="Dog Breeds">
+        </div>
+
+        <!-- RIGHT SIDE CONTENT -->
+        <div class="about-content">
+
+            <div class="about-item">
+                <h4>📄 Data Preparation</h4>
+                <p>
+                    The dataset consists of images of different dog breeds.
+                    These images are cleaned, resized, and normalized before
+                    being used to train the Convolutional Neural Network (CNN).
+                </p>
+            </div>
+
+            <div class="about-item">
+                <h4>⚙️ Model Building</h4>
+                <p>
+                    A CNN-based deep learning model is designed to extract
+                    meaningful features from dog images and classify them
+                    into different breed categories.
+                </p>
+            </div>
+
+            <div class="about-item">
+                <h4>📊 Model Training & Evaluation</h4>
+                <p>
+                    The model is trained on labeled data and evaluated using
+                    accuracy metrics to ensure reliable predictions.
+                </p>
+            </div>
+
+            <div class="about-item">
+                <h4>🚀 Model Deployment</h4>
+                <p>
+                    The trained model is deployed using Flask, allowing users
+                    to upload images and receive real-time breed predictions
+                    through a web interface.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- CONTACT SECTION (NEW, AS PER YOUR IMAGE) -->
+<section class="contact-section" id="contact">
+
+    <h2>CONTACT US</h2>
+
+    <div class="contact-container">
+
+        <!-- LEFT SIDE -->
+        <div class="contact-left">
+
+            <div class="contact-item">
+                <span>📍</span>
+                <div>
+                    <strong>Location:</strong>
+                    <p>
+                        Survey No. 91, Sundarayya Vignana Kendram,<br>
+                        Technical Block, 6th Floor, Madhava Reddy Colony,<br>
+                        Gachibowli, Hyderabad, Telangana 500032
+                    </p>
+                </div>
+            </div>
+
+            <div class="contact-item">
+                <span>✉️</span>
+                <div>
+                    <strong>Email:</strong>
+                    <p>info@thesmartbridge.com</p>
+                </div>
+            </div>
+
+            <div class="contact-item">
+                <span>📞</span>
+                <div>
+                    <strong>Call:</strong>
+                    <p>+91 6304320044</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- RIGHT SIDE -->
+        <div class="contact-right">
+            <form>
+                <div class="row">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                </div>
+                <input type="text" placeholder="Subject">
+                <textarea placeholder="Message"></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+
+    </div>
+</section>
+
+<!-- FOOTER (UNCHANGED) -->
+<footer>
+    <h3>Contact Us</h3>
+    <p>Email: info@dogbreed.com</p>
+    <p>Phone: +91 63043 20044</p>
+</footer>
+
+</body>
+</html>
