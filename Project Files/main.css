@@ -1,0 +1,171 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+nav {
+    background-color: #000;
+    color: #fff;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero {
+    height: 80vh;
+    background: #111;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+}
+
+.btn {
+    background-color: #f4b400;
+    color: #000;
+    padding: 12px 25px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.upload-section, .result-section, .about {
+    padding: 60px;
+    text-align: center;
+}
+
+input[type="file"] {
+    padding: 10px;
+}
+
+.result-img {
+    width: 300px;
+    margin: 20px 0;
+}
+
+.breed-name {
+    font-size: 24px;
+    color: #333;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+/* CONTACT SECTION */
+.contact-section {
+    padding: 70px;
+    background-color: #ffffff;
+}
+
+.contact-section h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.contact-container {
+    display: flex;
+    gap: 40px;
+}
+
+.contact-left {
+    flex: 1;
+}
+
+.contact-item {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.contact-item span {
+    font-size: 24px;
+}
+
+.contact-right {
+    flex: 1;
+}
+
+.contact-right .row {
+    display: flex;
+    gap: 15px;
+}
+
+.contact-right input,
+.contact-right textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-right textarea {
+    height: 120px;
+    resize: none;
+}
+/* ABOUT SECTION (Single Image Layout) */
+.about-section {
+    padding: 70px;
+    background-color: #ffffff;
+}
+
+.about-container {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.about-content {
+    flex: 1;
+}
+
+.about-item {
+    margin-bottom: 25px;
+}
+
+.about-item h4 {
+    margin-bottom: 8px;
+    color: #222;
+}
+
+.about-item p {
+    color: #555;
+    line-height: 1.6;
+    font-size: 14px;
+}
